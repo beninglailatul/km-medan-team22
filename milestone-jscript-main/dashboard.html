@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Team 22 Medan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Feather Icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://revou.co/">
+          <img src="./img/logo (2).png" alt="logo" class="logo" />
+        </a>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+        <div class="menu-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="search-icon">
+          <a href="#" id="search"><i data-feather="search"></i></a>
+        </div>
+      </nav>
+<!-- dashboard -->
+<section class="dashboard" id="dashboard">
+  <h1>Dashboard</h1>
+      <h2>Our Summary Report</h2><br>
+    <div id="Dashboard"> 
+      <div class="grid-container">
+        <div class="judul">
+          <h1>Pizza Sales Report</h1>
+        </div>
+        <div class="category"> Select Category:
+          <label for="categoryDropdown"></label>
+          <select id="categoryDropdown">
+            <option value="all">All</option>
+            <option value="Classic">Classic</option>
+            <option value="Veggie">Veggie</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Supreme">Supreme</option>
+          </select>
+        </div>
+        <div class="totalOrder">Total Order</div>
+        <div class="totalRevenue">Total Revenue</div>
+        <div class="totalSales">Total Sales</div>
+        <div class="revenueChart">Monthly Revenue Chart 
+          <canvas id="revChart"></canvas>
+        </div>
+        <div class="Size">Select Size:
+          <label for="sizeDropdown"></label>
+          <select id="sizeDropdown">
+            <option value="all">All</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            <option value="XXL">Extra Extra Large</option>
+          </select>
+        </div>
+        <div class="sizeChart">Size of Pizza 
+          <canvas id="sizChart" width="80" height="80"></canvas>
+        </div>
+        <div class="salesChart">Monthly Sales Chart 
+          <canvas id="salChart"></canvas>
+        </div>
+        <div class="salesCategory">Sales Pizza per Category
+          <canvas id="catChart"></canvas>
+        </div>
+      </div>
+    </div>
+</section>
+       <!-- Footer -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://www.instagram.com/pizzaautentica22?igsh=MWV3bnhpdWFkZXJxNg=="><i data-feather="instagram"></i></a>
+        <a href="https://x.com/PizzaAutentica_?t=Me6W1_NIal5DRRZFrSifeA&s=09"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61560731453196&mibextid=ZbWKwL"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+  
+
+      <div class="credit">
+        <p>Created by <a href="">SECTION MEDAN TEAM 22</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
